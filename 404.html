@@ -35,9 +35,6 @@
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="Jonney&#39;s Blog">Jonney&#39;s Blog</a></h1>
 				<h2 class="blog-motto"></h2>
-
-					<!-- style="display:none;" -->
-						 <p style="font-size:16px;font-weight:bold;color:#00aced;">网站访问次数：<label id="lb_count">0</label></p>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
@@ -145,10 +142,13 @@
   </div>
 
 
-  
-
+<aside id="sidebar" >
+  <!-- style="display:none;" -->
+     <p style="font-size:16px;font-weight:bold;color:#00aced;">网站访问次数：<label id="lb_count">0</label></p>
+</aside>
 </aside>
 </div>
+
     </div>
     <footer><div id="footer" >
 	
@@ -222,6 +222,7 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
+  
 });
 </script>
 
